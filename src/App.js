@@ -9,8 +9,8 @@ function App() {
   const [colorTheme, setTheme] = useDarkMode();
   return (
     <div>
-      <div className="fixed top-0 right-0 p-4">
-        <span onClick={() => setTheme(colorTheme)} className="w-9 h-9 bg-gray-300 dark:bg-black rounded-full flex justify-center items-center">
+      <div className="fixed top-0 right-0 p-4 lg:p-5">
+        <span onClick={() => setTheme(colorTheme)} className="w-7 h-7 bg-gray-300 dark:bg-black rounded-full flex justify-center items-center">
               {
                 colorTheme === 'light' ?
                 <svg className="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
@@ -23,9 +23,9 @@ function App() {
               }
           </span>
       </div>
-      <Bio title="Sidharth Baskaran"></Bio>
-      <SciO title="Science Olympiad"></SciO>
-      <Projects title="Projects"></Projects>
+      <Bio/>
+      <SciO/>
+      <Projects/>
     </div>
   );
 }
