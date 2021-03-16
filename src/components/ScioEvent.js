@@ -5,28 +5,32 @@ import '../index.css';
 class ScioEvent extends Component {
     render() {
         return (
-            <div className="bg-gray-400 dark:bg-gray-700 rounded-2xl shadow-2xl overflow-hidden h-auto w-75% sm:w-auto transition duration-500 lg:ease-in-out lg:transform hover:-translate-y-1 hover:scale-100">
-                {this.props.img}
+            <div className="dark:bg-gray-400 bg-gray-700 rounded-2xl shadow-2xl overflow-hidden h-auto transition duration-500 lg:ease-in-out lg:transform hover:-translate-y-1 hover:scale-100">
+                <img src={this.props.img} alt="" className="object-cover h-64 lg:h-max w-max mx-auto opacity-75"></img>
                 <div className="p-5">
-                    <a href={this.props.eventLink} target="_blank">
-                        <h1 className={this.props.textColors + " text-2xl font-bold my-2 hover:underline"}>{this.props.eventName}</h1>
-                    </a>
-                    <h2 className="text-black dark:text-gray-500 text-sm uppercase font-bold my-2">{this.props.category}</h2>
-                    <p className="text-black dark:text-gray-400 mr-4">
+                    <div className="flex justify-between">
+                        <a href={this.props.eventLink} target="_blank">
+                            <h1 className={this.props.textColors + " text-2xl font-bold hover:underline"}>{this.props.eventName}</h1>
+                        </a>
+                        <p className="dark:text-gray-600 text-gray-500 text-base uppercase font-bold my-2">{this.props.years}</p>
+                    </div>
+                    <h2 className="dark:text-gray-600 text-gray-500 text-sm uppercase font-bold mb-2">{this.props.category}</h2>
+                    <p className="dark:text-black text-gray-400 top-0 right-0">
                         {this.props.writeup}
                     </p>
-                    <h1 className="text-black dark:text-gray-300 text-lg font-semibold my-2">Awards</h1>
-                    <p className="text-black dark:text-gray-400 mr-4">
+                    <h1 className="dark:text-black text-gray-300 text-lg font-semibold my-2">Awards</h1>
+                    <p className="dark:text-black text-gray-400 mr-4">
                         {this.props.awards}
                     </p>
-                    <h1 className="text-black dark:text-gray-300 text-lg font-semibold my-2">{this.props.category === "Engineering" ? "See it in action" : "Sample test"}</h1>
                     {
-                        this.props.category !== "Engineering" ?
-                        <p className="text-black dark:text-gray-400">
-                            {this.props.videoUrl}
-                        </p>
+                        this.props.category === "Engineering"
+                            ?
+                        <React.Fragment>
+                            <h1 className="dark:text-black text-gray-300 text-lg font-semibold my-2">See it in action</h1>
+                            <iframe className="flex my-4 mx-auto rounded-2xl w-3/4" height="240" src={this.props.videoUrl} title="boomi-video"></iframe>
+                        </React.Fragment>
                             :
-                        <iframe className="flex object-cover my-4 mx-auto rounded-2xl" src={this.props.videoUrl} width="400" height="240" title="boomi-video"></iframe>
+                        null
                     }
                 </div>
             </div>
