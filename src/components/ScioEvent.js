@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 /* eslint-disable react/jsx-no-target-blank */
 import React, { Component } from 'react';
 import '../index.css';
@@ -27,7 +28,7 @@ class ScioEvent extends Component {
                             ?
                         <React.Fragment>
                             <h1 className="dark:text-black text-gray-300 text-lg font-semibold my-2">See it in action</h1>
-                            <iframe className="flex my-4 mx-auto rounded-2xl w-3/4" height="240" src={this.props.videoUrl} title="boomi-video"></iframe>
+                                <iframe className="flex my-4 mx-auto rounded-2xl w-3/4" height="240" src={this.props.videoUrl} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
                         </React.Fragment>
                             :
                         null

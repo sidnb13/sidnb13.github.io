@@ -34,7 +34,7 @@ class Bio extends Component {
                     In my free time, I enjoy working on Science Olympiad events, personal projects, and learning new technologies.
                 </React.Fragment>}
                 img={<img src={profile} alt="" className="object-cover w-44 rounded-3xl mt-4 sm:mt-0 sm:rounded-none lg:h-64 lg:w-72 mx-auto"></img>}
-                titleClass="text-5xl font-bold my-2 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500"
+                titleClass="text-5xl font-bold my-2"
                 extraComponent={extraComponent}
             />
         )

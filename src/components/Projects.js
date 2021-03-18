@@ -63,19 +63,19 @@ class Projects extends Component {
                         src={
                             <div className="flex flex-col md:flex-row gap-8 md:gap-5 mx-auto items-center">
                                 <a target="_blank" href="https://github.com/sidnb13/latex-class-notes/tree/master/calculus-bc-reference" className="w-3/4 md:w-1/3">
-                                    <img src={mathPictures[0]} alt="" className="rounded-2xl opacity-80"></img>
+                                    <img src={mathPictures[0]} alt="" className="rounded-t-2xl border-4 border-red-500 md:rounded-2xl opacity-80"></img>
                                 </a>
                                 <a target="_blank" href="https://github.com/sidnb13/latex-class-notes/tree/master/linear-algebra-reference" className="w-3/4 md:w-1/3">
-                                    <img src={mathPictures[1]} alt="" className="rounded-2xl opacity-80"></img>
+                                    <img src={mathPictures[1]} alt="" className="rounded-none border-4 border-green-500 md:rounded-2xl opacity-80"></img>
                                 </a>
                                 <a target="_blank" href="https://github.com/sidnb13/latex-class-notes/tree/master/multivariable-calculus-reference" className="w-3/4 md:w-1/3">
-                                    <img src={mathPictures[2]} alt="" className="rounded-2xl opacity-80"></img>
+                                    <img src={mathPictures[2]} alt="" className="rounded-b-2xl border-4 border-blue-500 md:rounded-2xl opacity-80"></img>
                                 </a>
                             </div>
                         }
                         writeup={
                             <React.Fragment>
-                                A repository of my class notes for AP Calculus BC, Multivariable Calculus, and Linear Algebra. This was a great opportunity for me to apply LaTeX typesetting skills, gain exposure to professional libraries such as TiKz for plotting, and practice proofwriting. Click on the screenshots below to see the respective TeX code.
+                                A repository of my class notes for AP Calculus BC, Multivariable Calculus, and Linear Algebra. This was a great opportunity for me to apply LaTeX typesetting skills, gain exposure to professional libraries such as TikZ for plotting, and practice proofwriting. Click on the different screenshots below to see the respective TeX code.
                                 I have also written a few answers on <a className="underline" href="https://math.stackexchange.com/users/876156/sidnb13?tab=answers" target="_blank">Math Stack Exchange</a>.
                             </React.Fragment>
                         }

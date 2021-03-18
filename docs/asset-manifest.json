@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.41d36de5.chunk.css",
-    "main.js": "/static/js/main.28e77b04.chunk.js",
-    "main.js.map": "/static/js/main.28e77b04.chunk.js.map",
+    "main.css": "/static/css/main.73db36e1.chunk.css",
+    "main.js": "/static/js/main.ec4cf351.chunk.js",
+    "main.js.map": "/static/js/main.ec4cf351.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.20e77e26.js",
     "runtime-main.js.map": "/static/js/runtime-main.20e77e26.js.map",
     "static/js/2.e83467ad.chunk.js": "/static/js/2.e83467ad.chunk.js",
     "static/js/2.e83467ad.chunk.js.map": "/static/js/2.e83467ad.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.41d36de5.chunk.css.map": "/static/css/main.41d36de5.chunk.css.map",
+    "static/css/main.73db36e1.chunk.css.map": "/static/css/main.73db36e1.chunk.css.map",
     "static/js/2.e83467ad.chunk.js.LICENSE.txt": "/static/js/2.e83467ad.chunk.js.LICENSE.txt",
     "static/media/boomilever.35391104.pdf": "/static/media/boomilever.35391104.pdf",
-    "static/media/boomilever.9a2dbee3.jpg": "/static/media/boomilever.9a2dbee3.jpg",
+    "static/media/boomilever.adc6203a.png": "/static/media/boomilever.adc6203a.png",
     "static/media/buggy.25b8a87f.pdf": "/static/media/buggy.25b8a87f.pdf",
     "static/media/calculus.a7e389b8.png": "/static/media/calculus.a7e389b8.png",
     "static/media/circuit-problem.ce2ef2e0.png": "/static/media/circuit-problem.ce2ef2e0.png",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.20e77e26.js",
     "static/js/2.e83467ad.chunk.js",
-    "static/css/main.41d36de5.chunk.css",
-    "static/js/main.28e77b04.chunk.js"
+    "static/css/main.73db36e1.chunk.css",
+    "static/js/main.ec4cf351.chunk.js"
   ]
 }
