@@ -1,11 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-no-target-blank */
-import Bio from './components/Bio';
-import SciO from './components/SciO';
-import Projects from './components/Projects';
 
 import './index.css';
 import useDarkMode from './hooks/useDarkMode';
+
+import Bio from './components/Bio';
+import SciO from './components/SciO';
+import Projects from './components/Projects';
 
 function App() {
   const [colorTheme, setTheme] = useDarkMode();
@@ -27,8 +28,8 @@ function App() {
       </div>
       <Bio/>
       <SciO/>
-      <Projects/>
-      <p className="dark:text-black text-gray-500 text-sm m-8 text-center">© Sidharth Baskaran 2021. <a className="underline" href="https://github.com/sidnb13/sidnb13.github.io" target="_blank">Open Source on GitHub (MIT license).</a></p>
+      <Projects />
+      <p className="dark:text-black text-gray-500 text-sm m-8 text-center">© Sidharth Baskaran 2021</p>
     </div>
   );
 }

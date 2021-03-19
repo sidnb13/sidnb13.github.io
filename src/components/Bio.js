@@ -7,7 +7,7 @@ import resume from '../static/resume.pdf'
 
 const extraComponent = (
     <React.Fragment>
-        <div className="bg-gray-500 dark:bg-gray-400 p-1.5 w-44 rounded-lg space-x-2 flex mt-8 justify-center">
+        <div className="bg-gray-500 dark:bg-gray-400 p-1.5 w-44 rounded-lg space-x-2 flex mt-4 lg:mt-8 justify-center">
             <a href="https://www.linkedin.com/in/sidharth-baskaran/" target="_blank">
                 <img alt="" className="h-5 w-5 mx-2" src="data:image/svg+xml;base64,PHN2ZyBpZD0iQm9sZCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTIzLjk5NCAyNHYtLjAwMWguMDA2di04LjgwMmMwLTQuMzA2LS45MjctNy42MjMtNS45NjEtNy42MjMtMi40MiAwLTQuMDQ0IDEuMzI4LTQuNzA3IDIuNTg3aC0uMDd2LTIuMTg1aC00Ljc3M3YxNi4wMjNoNC45N3YtNy45MzRjMC0yLjA4OS4zOTYtNC4xMDkgMi45ODMtNC4xMDkgMi41NDkgMCAyLjU4NyAyLjM4NCAyLjU4NyA0LjI0M3Y3LjgwMXoiLz48cGF0aCBkPSJtLjM5NiA3Ljk3N2g0Ljk3NnYxNi4wMjNoLTQuOTc2eiIvPjxwYXRoIGQ9Im0yLjg4MiAwYy0xLjU5MSAwLTIuODgyIDEuMjkxLTIuODgyIDIuODgyczEuMjkxIDIuOTA5IDIuODgyIDIuOTA5IDIuODgyLTEuMzE4IDIuODgyLTIuOTA5Yy0uMDAxLTEuNTkxLTEuMjkyLTIuODgyLTIuODgyLTIuODgyeiIvPjwvc3ZnPg==" />
             </a>
@@ -30,8 +30,8 @@ class Bio extends Component {
             <Block
                 title="Sidharth Baskaran"
                 body={<React.Fragment>
-                    Hello, I'm Sid, a rising senior at the <a href="https://www.lasahighschool.org/" target="_blank" className="underline">Liberal Arts and Science Academy High School</a> (LASA) in Austin, Texas. My interests mainly lie in engineering and computer science.
-                    In my free time, I enjoy working on Science Olympiad events, personal projects, and learning new technologies.
+                    I'm a rising senior at the <a href="https://www.lasahighschool.org/" target="_blank" className="underline">Liberal Arts and Science Academy High School</a> (LASA) in Austin, Texas. I have a strong interest in engineering and computer science.
+                    In my free time, I enjoy working on Science Olympiad events, coding projects, and learning new technologies.
                 </React.Fragment>}
                 img={<img src={profile} alt="" className="object-cover w-44 rounded-3xl mt-4 sm:mt-0 sm:rounded-none lg:h-64 lg:w-72 mx-auto"></img>}
                 titleClass="text-5xl font-bold my-2"

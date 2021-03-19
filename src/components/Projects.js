@@ -14,12 +14,14 @@ class Projects extends Component {
     render() {
         return (
             <div>
-                <Block title="Projects"
-                body="I have programmed in Java and C++, with additional experience with Python and JavaScript. I am currently interested in web development frameworks such as React as well as command-line tools and scripting. See a few of my projects below."
+                <Block title="Coding Projects"
+                    body="I learned Java and C++ in my AP and Advanced Computer Science classes. I have also learned Python, JavaScript, and web frameworks (React, TailwindCSS) on my own. 
+                    See a few of my projects below."
                 src="null"
                 titleClass="text-3xl font-bold my-2"
                 />
-                <div className="m-8 grid grid-flow-row grid-cols-1 grid-rows-4 xl:grid-cols-2 xl:grid-rows-2 gap-6 w-4/5 max-w-screen-xl mx-auto">
+                {/*may need to change grid classes below if adding more projects --> circumvents an oversized container with space*/}
+                <div className="m-8 grid grid-flow-row grid-cols-1 grid-rows-2 xl:grid-cols-2 xl:grid-rows-1 gap-6 w-4/5 max-w-screen-xl mx-auto">
                     <CodingProject
                         repoName="Chemical Equation Balancer"
                         repoLink="https://github.com/sidnb13/chemical-balancer"
@@ -52,6 +54,20 @@ class Projects extends Component {
                         textColors="dark:text-indigo-700 text-indigo-400"
                         languages="Java"
                         writeup="A tool that generates ionic compounds given an anion and cation while observing IUPAC standards and conventions."
+                    />
+                    <CodingProject
+                        repoName="Spotify Ad-Removal Script"
+                        repoLink="https://github.com/sidnb13/spotify-ad-killer"
+                        textColors="dark:text-green-700 text-green-400"
+                        languages="Bash/AppleScript"
+                        writeup="A small script utility that circumvents Spotify ads on MacOS through watching the application for playback changes."
+                    />
+                    <CodingProject
+                        repoName="C++ Learning Repository"
+                        repoLink="https://github.com/sidnb13/cpp-learning"
+                        textColors="dark:text-blue-700 text-blue-400"
+                        languages="C++"
+                        writeup="A small repository of data structure implementations I wrote when learning C++ last summer."
                     />
                 </div>
                 <CodingProject
