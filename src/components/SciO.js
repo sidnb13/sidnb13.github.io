@@ -75,7 +75,7 @@ class SciO extends Component {
                         years="2017-2018"
                         textColors="dark:text-yellow-700 text-yellow-400"
                         eventLink={buggyRules}
-                        videoUrl="https://www.youtube.com/embed/kc0jHr2SEis"
+                        videoUrl="https://www.youtube.com/embed/xjsG5QLEd18"
                         writeup="A vehicle that uses electrical energy as its sole means of propulsion,
                         quickly travels a specified distance, and stops as close as possible to a specified finish point. My design utilized a powerful electromechanical braking system integrated with a kill switch integrated into the circuitry."
                         awards="Competed in 2018 National Tournament (Fort Collins, CO)"

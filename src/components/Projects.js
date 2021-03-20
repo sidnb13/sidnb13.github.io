@@ -71,7 +71,7 @@ class Projects extends Component {
                     />
                 </div>
                 <CodingProject
-                        optionalClass="col-span-2 w-4/5 mx-auto"
+                        optionalClass="col-span-2 w-4/5 mx-auto max-w-screen-xl"
                         repoName="Mathematics Class Notes"
                         repoLink="https://github.com/sidnb13/latex-notes"
                         textColors="dark:text-yellow-700 text-yellow-400"
