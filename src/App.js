@@ -12,7 +12,7 @@ function App() {
   const [colorTheme, setTheme] = useDarkMode();
   return (
     <div>
-      <div className="fixed top-0 right-0 py-4 px-3 lg:p-8">
+      <div className="fixed top-0 right-0 py-4 px-1.5 lg:p-8">
         <span onClick={() => setTheme(colorTheme)} className="w-7 h-7 dark:bg-gray-500 bg-black rounded-full flex justify-center items-center">
               {
                 colorTheme === 'dark' ?
