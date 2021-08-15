@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Blog</title>
+  <meta name="description"
+    content="My blog">
+  <meta property="og:image" content="">
+  <link rel="canonical" href="">
+  <meta property="og:url" content="https://sidbaskaran.me/blog">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" href="/img/icons/favicon.ico">
+  <link rel="stylesheet" href="/build/styles.css">
+  <script type="text/x-mathjax-config">    
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            processEscapes: true
+        },
+    });
+  </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <script src="/js/darkmode.js"></script>
+</head>
+
+<body class="bg-gray-100 dark:bg-black">
+  <div class="h-6 w-screen bg-gradient-to-r from-blue-600 dark:from-green-600 to-purple-600 dark:to-blue-600"></div>
+  <button onclick="toggleDarkMode()" class="float-right m-4 transition duration-500 lg:ease-in-out lg:transform hover:-translate-y-1/4 hover:scale-100">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current text-black dark:text-white" viewBox="0 0 20 20">
+      <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+    </svg>
+  </button>
+  <a href="/index.html">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 m-4 stroke-current text-black dark:text-white transition duration-500 lg:ease-in-out lg:transform hover:-translate-y-1 hover:scale-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+  </a>
+  <!--Enter body text and stuff here-->
+  <div class="justify-center mx-auto px-8 max-w-screen-sm space-y-4">
+    <h1 class="text-4xl font-bold dark:text-gray-100 text-center">Blog</h1>
+    <!--{beginposts}-->
+    <div class="rounded-md bg-gray-400 dark:bg-gray-600 mx-auto flex p-3" id="blog_container">
+      <div class="grid row-span-2">
+        <h2 class="text-2xl font-bold dark:text-gray-200">Post name</h2>
+        <p class="text-sm font-bold dark:text-gray-400">August 12, 2021</p>
+        <p class="text-sm font-semibold dark:text-gray-500">10 min</p>
+      </div>
+      <div class="pl-3 self-center">
+        <p class="text-base font-normal dark:text-gray-200">
+          But let's look deeper at what these actually are. 
+        </p>
+      </div>
+    </div>
+    <!--{endposts}-->
+    <p class="p-4 absolute inset-x-0 bottom-0 text-center text-gray-400 dark:text-gray-600 text-sm">© Sidharth Baskaran 2021</p>
+  </div>
+</body>
+</html>
