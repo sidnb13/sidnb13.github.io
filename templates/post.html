@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Gautam Mittal - {POST-TITLE}</title>
+  <meta name="description" content="{POST-DESCRIPTION}">
+  <meta property="og:description" content="{POST-DESCRIPTION}">
+  <meta property="og:type" content="article">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <link rel="stylesheet" href="//rsms.me/inter/inter-ui.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <hr id="starter" />
+  <div id="header">
+    <h1 id="author">
+      <span id="goHome" onclick="javascript:location.href='/';">
+        <img src="/img/me/me.jpg" />&nbsp;
+        <span id="name">Gautam Mittal</span>
+      </span>
+    </h1>
+    <span id="readTime">
+      {POST-READ-TIME} min
+    </span>
+  </div>
+  <hr id="mobileDivider" />
+  <div class="content row" id="postArea">
+    <div class="two columns"></div>
+    <div class="eight columns">
+      <div class="mainIntro">
+        <div id="headline">
+          {POST-TITLE}
+        </div>
+        <div class="date" style="margin-left:0px!important;">
+	  <span id="lead">{POST-DESCRIPTION}</span><br />
+	  {POST-DATE}
+	</div>
+      </div>
+      <div class="articleBody firstcharacter">
+        {POST-CONTENT}
+      </div>
+    </div>
+    <div class="two columns"></div>
+  </div>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    };
+  </script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>

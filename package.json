@@ -1,0 +1,32 @@
+{
+  "name": "sidbaskaran.me",
+  "version": "1.1.0",
+  "description": "Sid Baskaran's personal website",
+  "main": "build.js",
+  "scripts": {
+    "build": "postcss css/styles.css -o build/styles.css",
+    "publish": "node js/build.js",
+    "serve": "npx live-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "sidharth",
+    "baskaran",
+    "blog",
+    "website",
+    "science olympiad",
+    "wright stuff"
+  ],
+  "author": "Sidharth Baskaran",
+  "license": "MIT",
+  "homepage": "",
+  "devDependencies": {
+    "@types/tailwindcss": "^2.2.1",
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  }
+}
