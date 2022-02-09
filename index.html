@@ -10,9 +10,8 @@
   <link rel="canonical" href="https://sidbaskaran.me">
   <meta property="og:url" content="https://sidbaskaran.me">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
   <link rel="icon" type="image/png" href="/img/icons/favicon.ico">
-  <link rel="stylesheet" href="build/styles.css">
+  <link rel="stylesheet" href="build/styles.css">  
   <script type="text/x-mathjax-config">    
     MathJax.Hub.Config({
         tex2jax: {
@@ -21,134 +20,60 @@
         },
     });
   </script>
+
+  <link href="https://pagecdn.io/lib/easyfonts/fonts.css" rel="stylesheet" />
+
   <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
   </script>
   <script src="js/darkmode.js"></script>
 </head>
 
-<body class="bg-gray-200 dark:bg-gray-900">
+<body class="bg-white dark:bg-gray-900">
   <div class="h-6 w-screen bg-gradient-to-r from-blue-600 to-purple-600"></div>
-  <!-- <button onclick="toggleDarkMode()" class="float-right m-4 hover:opacity-50">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current text-black dark:text-white" viewBox="0 0 20 20">
-      <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
-    </svg>
-  </button> -->
-  <div class="justify-center mx-auto px-8 py-12 max-w-screen-sm space-y-4">
-    <div class="flex justify-between items-center">
-      <h1 class="text-4xl font-bold dark:text-gray-100">Sidharth Baskaran</h1>
-      <div class="flex gap-2 rounded-lg p-1 dark:bg-gray-500">
-        <a href="https://github.com/sidnb13" target="_blank" class="hover:opacity-50">
-          <img src="img/social/github.svg" width="28" height="28" class="stroke-current text-purple-600">
-        </a>
-        <a href="https://linkedin.com/in/sidharth-baskaran/" target="_blank" class="hover:opacity-50">
-          <img src="img/social/linkedin.svg" width="28" height="28">
-        </a>
+    <div class="justify-center mx-auto px-8 py-12 max-w-screen-sm space-y-2 flex-grow">
+      <div class="flex space-x-8 items-center pb-4">
+        <img src="img/GravityVehicleV3.jpg" alt="" width="150" height="150" class="rounded-full">
+        <div class="justify-items-right">
+          <h1 class="text-3xl font-bold dark:text-gray-100">Sidharth Baskaran</h1>
+          <h2 class="text-xs font-bold text-yellow-600 uppercase">CS Student | Aspiring Researcher </h2>
+          <div class="flex gap-2 rounded-lg pt-2 dark:bg-gray-500">
+            <a href="https://github.com/sidnb13" target="_blank" class="hover:opacity-50">
+              <img src="img/social/github.svg" width="24" height="24" class="stroke-current text-purple-600">
+            </a>
+            <a href="https://linkedin.com/in/sidharth-baskaran/" target="_blank" class="hover:opacity-50">
+              <img src="img/social/linkedin.svg" width="24" height="24">
+            </a>
+          </div>
+        </div>
       </div>
+      <h1 class="text-lg font-bold dark:text-gray-100">About</h1>
+      <p class="text-left text-gray-500 text-sm">
+        I'm a senior at the Liberal Arts and Science Academy in Austin, TX. My interests lie in computer science and mathematics.
+        In my free time, I enjoy working on Science Olympiad engineering builds, solving programming challenges, and oversleeping.
+        Here is my <a href="/static/resume.pdf" target="_blank" class="underline text-blue-400 hover:text-green-600">resume</a>, and you can reach out via <a href="mailto:sidnbaskaran@gmail.com" class="underline text-blue-400 hover:text-green-600">email</a> here.
+      </p>
+      <h1 class="text-lg font-bold dark:text-gray-100">Research</h1>
+        <div>
+          <h2 class="text-base font-semibold text-gray-700">Deep Plastic Surgery with GANs</h2>
+          <p class="text-left text-gray-500 text-sm">
+            Since the summer of 2021, I have been conducting independent research at UT Austin's Visual Informatics group, where I am expanding my knowledge of Generative Adversarial Networks and deep learning theory through work on the Deep Plastic Surgery project.
+            My goal is to use the model to generate realistic pictures of monsters as imagined by childrens' sketches to approximate real artists' renderings.
+          </p>
+        </div>
+        <div>
+          <h2 class="text-base font-semibold text-gray-700">Spacecraft Motion with Thrust Normal to Velocity</h2>
+          <p class="text-left text-gray-500 text-sm">
+            Last summer, my research internship at UT Austin's Aerospace Engineering Department gave me the opportunity to work with numerical methods in order to solve transcendental equations that described spaceflight parameters.
+            This was my first introduction to the research process, and was a valuable opportunity in terms of the experience and mathematical insight I gained.
+          </p>
+        </div>  
+      <h1 class="text-lg font-bold dark:text-gray-100">Projects</h1>
+      <p class="text-left text-gray-500 text-sm">
+          <a href="/static/writeup.pdf" target="_blank" class="underline text-blue-400 hover:text-green-600">Here</a> is a comprehensive writeup of the engineering devices I've built for Science Olympiad over the past few years.
+      </p>
     </div>
-    <p class="text-left text-gray-600 dark:text-gray-300">
-      I'm a senior at the Liberal Arts and Science Academy in Austin, TX. My interests lie in math, computer science, and hands-on engineering.
-      In my free time, I enjoy working on Science Olympiad builds, writing scripts to automate various tasks, writing by itself, and cool problems. 
-    </p>
-    <!-- <p class="text-left text-gray-600 dark:text-gray-300">
-      I currently work on research involving applied math and numerical methods in UT's Aerospace Engineering department, 
-      and have been working on extending the Deep Plastic Surgery framework developed by researchers at UT's Visual Informatics Group.
-    </p> -->
-    <p class="text-left text-gray-600 dark:text-gray-300">
-      <a href="/static/resume.pdf" class="underline text-blue-400 hover:text-green-600">Resumé</a> | <a href="mailto:sidnbaskaran@gmail.com" class="underline text-blue-400 hover:text-green-600">Email</a>.
-    </p>
-
-    <!-- <h1 class="text-2xl font-bold dark:text-gray-100">Science Olympiad</h1>
-
-    <p class="text-left text-gray-600 dark:text-gray-300">
-      I have competed in Science Olympiad for nearly 6 years with a focus in engineering events, and have been a team captain for the past 2.
-      Engineering events involve the design, construction, and testing of a device that aims to optimize a certain metric as accurately and precisely as possible.
-    </p> -->
-
-    <!-- <div class="rounded-2xl bg-gray-300 place-self-stretch p-6">
-      <div class="my-slider1">
-        <div>
-          <img class="w-auto rounded-lg mx-auto" src="img/boomilever.png" alt="">
-        </div>
-        <div>
-          <img class="w-auto rounded-lg mx-auto" src="img/boomilever.png" alt="">
-        </div>
-      </div>
-      <p class="text-sm text-gray-400 flex justify-center pt-1">
-        slide to view more
-      </p>
-      <p class="pt-0 text-lg font-semibold text-left text-gray-600 dark:text-gray-300">
-        Boomilever
-      </p>
-      <p class="text-sm text-left text-gray-600 dark:text-gray-300">
-        A lightweight wood structure optimized for the best structural efficiency within challenging design constraints.
-      </p>
-    </div> -->
-
-    <!-- <h1 class="text-2xl font-bold dark:text-gray-100">Projects</h1>
-    <div class="rounded-2xl bg-gray-300 place-self-stretch p-6">
-        <div class="my-slider1">
-          <div>
-            <img class="w-auto rounded-lg mx-auto" src="img/boomilever.png" alt="">
-          </div>
-          <div>
-            <img class="w-auto rounded-lg mx-auto" src="img/boomilever.png" alt="">
-          </div>
-        </div>
-        <p class="text-sm text-gray-400 flex justify-center pt-1">
-          slide to view more
-        </p>
-        <p class="pt-0 text-lg font-semibold text-left text-gray-600 dark:text-gray-300">
-          Boomilever
-        </p>
-        <p class="text-sm text-left text-gray-600 dark:text-gray-300">
-          A lightweight wood structure optimized for the best structural efficiency within challenging design constraints.
-        </p>
-    </div> -->
+    <p class="pb-4 text-center text-gray-400 dark:text-gray-600 text-xs">© Sidharth Baskaran 2021</p>
   </div>
-  </div>
-  <div>
-    <p class="p-4 absolute inset-x-0 bottom-0 text-center text-gray-400 dark:text-gray-600 text-sm">© Sidharth Baskaran 2021</p>
-  </div>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-  <script type="text/javascript">
-    let slider = tns({
-      container: '.my-slider1',
-      items: 1,
-      slideBy: 'page',
-      autoplay: false,
-      nav: true,
-      arrowKeys: true,
-      touch: true,
-      mouseDrag: true,
-      controls: false,
-    });
-  </script>
-  <script type="text/javascript">
-    let slider = tns({
-      container: '.my-slider2',
-      items: 1,
-      slideBy: 'page',
-      autoplay: false,
-      nav: true,
-      arrowKeys: true,
-      touch: true,
-      mouseDrag: true,
-      controls: false,
-    });
-  </script>
-  <script type="text/javascript">
-    let slider = tns({
-      container: '.my-slider3',
-      items: 1,
-      slideBy: 'page',
-      autoplay: false,
-      nav: true,
-      arrowKeys: true,
-      touch: true,
-      mouseDrag: true,
-      controls: false,
-    });
-  </script> -->
 </body>
 </html>
