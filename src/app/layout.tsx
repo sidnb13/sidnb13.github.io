@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import "./globals.css";
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,11 +13,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-white dark:bg-gray-900" style={{
-        backgroundImage: 'url(/topo.svg)',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'repeat',
-      }}>{children}</body>
+      <body
+        style={{
+          backgroundImage: "url(/topo.svg)",
+          backgroundSize: "cover",
+          backgroundRepeat: "repeat",
+        }}
+        className="bg-zinc-100 dark:bg-zinc-900"
+      >
+        {children}
+      </body>
     </html>
   );
 }
