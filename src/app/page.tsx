@@ -7,9 +7,10 @@ export default function Home() {
         <Image
           src="/pfp.jpeg"
           alt=""
-          width={100}
-          height={100}
-          className="rounded-full"
+          width={120}
+          height={120}
+          className="rounded-full aspect-square object-cover"
+          key={1}
         />
         <div className="justify-items-right">
           <h1 className="text-4xl text-black font-extrabold dark:text-gray-100 font-serif">
@@ -129,7 +130,7 @@ export default function Home() {
       </div>
       <h1 className="text-lg font-bold dark:text-gray-100">About</h1>
       <p className="text-left text-gray-600 text-sm">
-        I currently work at
+        I am currently a founding engineer and researcher at
         <a
           href="https://automorphic.ai/"
           target="_blank"
@@ -139,7 +140,7 @@ export default function Home() {
           Automorphic (YC S23){" "}
         </a>
         in San Francisco, conducting research on building steerable,
-        knowledgeable language models. I'm also affiliated with{" "}
+        knowledgeable language models. I&apos;m also affiliated with{" "}
         <a
           href="https://confirmlabs.org/"
           target="_blank"
@@ -147,19 +148,20 @@ export default function Home() {
         >
           Confirm Labs
         </a>
-        , working on a interpretability-focused model editing architecture for
-        language models. Research directions I'm actively exploring include
-        interpretability, low-resource adaptation, alignment.
+        , working on intepretability projects such as a hypernetwork-based model editor and new ways to leverage SAEs for circuit discovery.
       </p>
       <p className="text-left text-gray-600 text-sm">
-        For the past year I've been on leave from Georgia Tech, where I finished
+        My general research interests include intepretability, alignment, domain adaptation methods, and foundation models for science.
+      </p>
+      <p className="text-left text-gray-600 text-sm">
+        For the past year I&apos;ve been on leave from Georgia Tech, where I finished
         my first year studying Computer Science.
       </p>
-      {/* <p className="text-left text-gray-600 text-sm">
-        In the past, I've interned at Oak Ridge exploring the intersection of
-        graph learning and transformer models, and conducted research at Georgia
-        Tech developing graph neural networks for materials science.
-      </p> */}
+      <p className="text-left text-gray-600 text-sm">
+        I also enjoy
+        <a href="https://tmgps.org/" target="_blank" className="no-underline hover:underline text-gray-500"> rowing my own gears</a>,
+        cycling, music of the past, and a good book or blog.
+      </p>
       <p className="text-left text-gray-600 text-sm">
         I have a{" "}
         <a
