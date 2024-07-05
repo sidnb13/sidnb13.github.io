@@ -2,8 +2,7 @@
 const nextConfig = {
     output: "export",  // <=== enables static exports
     reactStrictMode: true,
-    basePath: '/sidnb13.github.io',
-
+    assetPrefix: process.env.NODE_ENV === "production" ? "/sidnb13.github.io/" : undefined,
 };
 
 export default nextConfig;
