@@ -4,7 +4,7 @@ const nextConfig = {
     reactStrictMode: true,
 };
 module.exports = {
-    basePath: '/sidbaskaran.com',
+    basePath: '/sidnb13.github.io',
 };
 
 export default nextConfig;
