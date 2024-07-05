@@ -1,10 +1,8 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="justify-center mx-auto px-8 py-12 max-w-screen-sm space-y-2 flex-grow">
       <div className="flex space-x-8 items-center pb-4">
-        <Image
+        <img
           src="/pfp.jpeg"
           alt=""
           width={120}
