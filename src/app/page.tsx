@@ -1,3 +1,5 @@
+import ResearchProjects from '../components/ResearchProjects';
+
 export default function Home() {
   return (
     <div className="justify-center mx-auto px-8 py-12 max-w-screen-sm space-y-2 flex-grow">
@@ -128,7 +130,10 @@ export default function Home() {
       </div>
       <h1 className="text-lg font-bold dark:text-gray-100">About</h1>
       <p className="text-left text-gray-600 text-sm">
-        I am currently a founding engineer and researcher at
+        I study Computer Science at Georgia Tech 🐝 with concentrations in systems and theory.
+      </p>
+      <p className="text-left text-gray-600 text-sm">
+        I spent the past year on leave as founding engineer and researcher at
         <a
           href="https://automorphic.ai/"
           target="_blank"
@@ -138,7 +143,7 @@ export default function Home() {
           Automorphic (YC S23){" "}
         </a>
         in San Francisco, conducting research on building steerable,
-        knowledgeable language models. I&apos;m also affiliated with{" "}
+        knowledgeable language models. I also work with{" "}
         <a
           href="https://confirmlabs.org/"
           target="_blank"
@@ -146,14 +151,10 @@ export default function Home() {
         >
           Confirm Labs
         </a>
-        , working on intepretability projects such as a hypernetwork-based model editor and new ways to leverage SAEs for circuit discovery.
+        , new ways to discover interpretable circuits in language models.
       </p>
       <p className="text-left text-gray-600 text-sm">
-        My general research interests include intepretability, alignment, domain adaptation methods, and foundation models for science.
-      </p>
-      <p className="text-left text-gray-600 text-sm">
-        For the past year I&apos;ve been on leave from Georgia Tech, where I finished
-        my first year studying Computer Science.
+        I am generally interested in language models, specifically intepretability, capabilities (e.g. agents and reasoning), and architectural improvements.
       </p>
       <p className="text-left text-gray-600 text-sm">
         I also enjoy
@@ -178,6 +179,7 @@ export default function Home() {
         </a>
         .
       </p>
+
       <div className="absolute inset-x-0 bottom-0">
         <p className="pb-4 text-center text-gray-400 dark:text-gray-600 text-xs">
           © Sidharth Baskaran 2024.{" "}
