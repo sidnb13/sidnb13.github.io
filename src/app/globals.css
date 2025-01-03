@@ -3,31 +3,68 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --foreground-rgb: 51, 51, 51; /* main heading in light mode */
+    --foreground-secondary-rgb: 76, 83, 98; /* #4C5362 body text in light */
+    --foreground-heading-rgb: 9, 74, 206; /* #094ACE subheadings in light */
+    --background-rgb: 247, 247, 243; /* #F7F7F3 background in light */
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    :root {
+        --foreground-rgb: 157, 188, 251; /* #9DBCFB headings in dark */
+        --foreground-secondary-rgb: 168, 175, 189; /* #A8AFBD body text in dark */
+        --foreground-heading-rgb: 157, 188, 251; /* #9DBCFB subheadings in dark */
+        --background-rgb: 23, 24, 28; /* #17181C background in dark */
+    }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    color: rgb(var(--foreground-secondary-rgb));
+    background: rgb(var(--background-rgb));
+    transition-property: color, background-color;
+    transition-duration: 200ms;
+}
+
+h1 {
+    color: rgb(var(--foreground-rgb));
+}
+
+h2 {
+    color: rgb(var(--foreground-heading-rgb));
+}
+
+@layer components {
+    .link-hover {
+        @apply transition-opacity hover:opacity-70;
+    }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.page-fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@media print {
+    .no-print {
+        display: none;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+    }
 }

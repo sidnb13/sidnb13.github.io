@@ -1,10 +1,36 @@
 import type { Metadata } from "next";
+import { Lora, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
+
+// Initialize Lora font
+const lora = Lora({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-lora",
+  // Optional: specify weights if you need specific ones
+  // weight: ['400', '500', '600', '700'],
+});
+
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-ibm-plex-mono",
+  weight: ["400"], // can add more weights if needed
+});
 
 export const metadata: Metadata = {
   title: "Sidharth Baskaran",
-  description: "my personal website",
-  icons: "favicon.ico",
+  description: "Research and software",
+  openGraph: {
+    title: "Sidharth Baskaran",
+    description: "Research and software",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Sidharth Baskaran",
+    description: "Research and software",
+  },
 };
 
 export default function RootLayout({
@@ -13,18 +39,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        style={{
-          backgroundImage: "url(/topo.svg)",
-          backgroundSize: "cover",
-          backgroundRepeat: "repeat",
-        }}
-        className="bg-zinc-100 dark:bg-zinc-900"
-      >
-        <link rel="icon" href="/favicon.ico" sizes="any"/>
-        {children}
-      </body>
+    <html lang="en" className={lora.variable}>
+      <body className={lora.className}>{children}</body>
     </html>
   );
 }
