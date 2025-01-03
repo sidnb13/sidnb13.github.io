@@ -33,12 +33,22 @@ const ResearchProject: React.FC<ResearchProjectProps> = ({
         {(pdfUrl || arxivUrl) && (
           <span className="ml-1">
             {pdfUrl && (
-              <a href={pdfUrl} className="underline mr-1 link-hover">
+              <a
+                href={pdfUrl}
+                target="_blank"
+                className="font-mono mx-1 text-emerald-600 dark:text-emerald-400
+                  hover:opacity-80 transition-opacity"
+              >
                 pdf
               </a>
             )}
             {arxivUrl && (
-              <a href={arxivUrl} className="underline link-hover">
+              <a
+                href={arxivUrl}
+                target="_blank"
+                className="font-mono mx-1 text-emerald-600 dark:text-emerald-400
+                  hover:opacity-80 transition-opacity"
+              >
                 arxiv
               </a>
             )}

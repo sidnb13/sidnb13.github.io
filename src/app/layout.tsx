@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Lora, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
+import MouseGlow from "@/components/MouseGlow";
 
 // Initialize Lora font
 const lora = Lora({
@@ -40,7 +41,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={lora.variable}>
-      <body className={lora.className}>{children}</body>
+      <body
+        className={`${lora.className} bg-background dark:bg-dark-background text-primary-secondary dark:text-dark-secondary transition-colors duration-200`}
+      >
+        <MouseGlow />
+        {children}
+      </body>
     </html>
   );
 }
