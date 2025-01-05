@@ -9,7 +9,7 @@ export default function Home() {
         "HyperDAS: Towards Automating Mechanistic Interpretability with Hypernetworks",
       boldAuthor: "Sidharth Baskaran",
       conference: "in review",
-      pdfUrl: "https://openreview.net/forum?id=6fDjUoEQvm",
+      pdfUrl: "https://openreview.net/pdf?id=6fDjUoEQvm",
     },
     {
       title: "Brief Investigations of a Multi-layer Sparse Auto-Encoder",
