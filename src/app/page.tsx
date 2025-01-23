@@ -8,14 +8,15 @@ export default function Home() {
       title:
         "HyperDAS: Towards Automating Mechanistic Interpretability with Hypernetworks",
       boldAuthor: "Sidharth Baskaran",
-      conference: "in review",
+      conference: "ICLR 2025",
+      authors: ["Jiuding Sun", "Jing Huang", "Sidharth Baskaran", "Karel D'Oosterlinck", "Christopher Potts", "Michael Sklar*", "Atticus Geiger*"],
       pdfUrl: "https://openreview.net/pdf?id=6fDjUoEQvm",
     },
     {
       title: "Brief Investigations of a Multi-layer Sparse Auto-Encoder",
       authors: ["Sidharth Baskaran*", "Michael Sklar*"],
       boldAuthor: "Sidharth Baskaran*",
-      conference: "LessWrong",
+      conference: "LessWrong (in development)",
     },
     {
       title:
