@@ -10,6 +10,7 @@ export default function Home() {
       boldAuthor: "Sidharth Baskaran",
       conference: "ICLR 2025",
       authors: ["Jiuding Sun", "Jing Huang", "Sidharth Baskaran", "Karel D'Oosterlinck", "Christopher Potts", "Michael Sklar*", "Atticus Geiger*"],
+      arxivUrl: "https://arxiv.org/abs/2503.10894",
       pdfUrl: "https://openreview.net/pdf?id=6fDjUoEQvm",
     },
     {
