@@ -5,6 +5,14 @@ import { FadeInStagger, FadeInItem } from "../components/FadeInStagger";
 export default function Home() {
   const researchProjects = [
     {
+      title: "HyperSteer: Activation Steering at Scale with Hypernetworks",
+      boldAuthor: "Sidharth Baskaran*",
+      conference: "in review",
+      authors: ["Jiuding Sun*", "Sidharth Baskaran*", "Zhengxuan Wu", "Michael Sklar", "Christopher Potts", "Atticus Geiger"],
+      arxivUrl: "https://arxiv.org/abs/2506.03292",
+      pdfUrl: "https://arxiv.org/pdf/2506.03292.pdf",
+    },
+    {
       title:
         "HyperDAS: Towards Automating Mechanistic Interpretability with Hypernetworks",
       boldAuthor: "Sidharth Baskaran",
@@ -12,12 +20,6 @@ export default function Home() {
       authors: ["Jiuding Sun", "Jing Huang", "Sidharth Baskaran", "Karel D'Oosterlinck", "Christopher Potts", "Michael Sklar*", "Atticus Geiger*"],
       arxivUrl: "https://arxiv.org/abs/2503.10894",
       pdfUrl: "https://openreview.net/pdf?id=6fDjUoEQvm",
-    },
-    {
-      title: "Brief Investigations of a Multi-layer Sparse Auto-Encoder",
-      authors: ["Sidharth Baskaran*", "Michael Sklar*"],
-      boldAuthor: "Sidharth Baskaran*",
-      conference: "LessWrong (in development)",
     },
     {
       title:
@@ -82,9 +84,7 @@ export default function Home() {
         </a>
       </p>
       <p className="m-8 text-sm">
-        Computer Science at Georgia Tech. Working on language model
-        interpretability to build intelligent systems. Manual transmission &amp;
-        caffeine enthusiast.
+        I am interested in building systems and novel methods to understand and improve language model capabilities.
       </p>
 
       <section className="m-8">
